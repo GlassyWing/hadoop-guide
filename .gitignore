@@ -1,5 +1,4 @@
 .idea/
-.project
-.settings
-*/.project
-*/.settings
+**.project
+**.settings
+**.iml
