@@ -12,6 +12,7 @@
         <module>book</module>
         <module>hadoop-meta</module>
         <module>ch20-hbase</module>
+        <module>ch02-mrintro</module>
     </modules>
 
 
