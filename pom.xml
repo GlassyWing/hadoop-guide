@@ -14,6 +14,8 @@
         <module>ch20-hbase</module>
         <module>ch02-mrintro</module>
         <module>ch03-hdfs</module>
+        <module>ch06-mr-dev</module>
+        <module>hadoop-example</module>
     </modules>
 
 

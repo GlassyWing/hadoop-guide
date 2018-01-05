@@ -1,4 +1,5 @@
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.TableName;
@@ -48,7 +49,7 @@ public class ExampleClient {
                 try (ResultScanner scanner = table.getScanner(scan)) {
                     scanner.forEach(scannerResult -> System.out.println("Scan: " + scannerResult));
                 }
-
+            } finally {
                 admin.disableTable(tableName);
                 admin.deleteTable(tableName);
             }

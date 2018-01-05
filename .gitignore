@@ -2,4 +2,6 @@
 **.project
 **.settings
 **.iml
-ouput/
+**.jar
+**/output/
+**/target/
