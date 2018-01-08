@@ -16,6 +16,8 @@
         <module>ch03-hdfs</module>
         <module>ch06-mr-dev</module>
         <module>hadoop-example</module>
+        <module>ch08-mr-types</module>
+        <module>common</module>
     </modules>
 
 
