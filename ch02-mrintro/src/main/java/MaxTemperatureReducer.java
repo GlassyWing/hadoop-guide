@@ -6,6 +6,8 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
+import java.util.Optional;
+import java.util.stream.StreamSupport;
 
 public class MaxTemperatureReducer
         extends Reducer<Text, IntWritable, Text, IntWritable> {
@@ -15,11 +17,14 @@ public class MaxTemperatureReducer
                        Context context)
             throws IOException, InterruptedException {
 
-        final int[] maxValue = {Integer.MIN_VALUE};
+        Optional<IntWritable> maxValue = StreamSupport.stream(values.spliterator(), false)
+                .map(IntWritable::get)
+                .max(Integer::compareTo)
+                .map(IntWritable::new);
 
-        values.forEach(value -> maxValue[0] = Math.max(maxValue[0], value.get()));
-
-        context.write(key, new IntWritable(maxValue[0]));
+        if (maxValue.isPresent()) {
+            context.write(key, maxValue.get());
+        }
     }
 }
 // ^^ MaxTemperatureReducer
