@@ -43,7 +43,7 @@ public class NcdcRecordParser {
         parse(record.toString());
     }
 
-    public boolean isValidTemeprature() {
+    public boolean isValidTemperature() {
         return !airTemperatureMalformed && airTemperature != MISSING_TEMPERATURE && quality.matches("[01459]");
     }
 

@@ -3,5 +3,5 @@
 **.settings
 **.iml
 **.jar
-**/output/
-**/target/
+**/output*/
+**/target*/

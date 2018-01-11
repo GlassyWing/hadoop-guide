@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hadoop-meta</artifactId>
+        <groupId>org.manlier</groupId>
+        <version>4.0</version>
+        <relativePath>../hadoop-meta/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <name>Chapter 9: MapReduce Features</name>
+    <artifactId>ch09-mr-features</artifactId>
+    <version>1.0</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.manlier</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
+            <artifactId>ch02-mr-intro</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
+            <artifactId>ch05-io</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

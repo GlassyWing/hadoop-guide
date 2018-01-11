@@ -17,6 +17,11 @@
     <dependencies>
         <dependency>
             <groupId>org.manlier</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
             <artifactId>ch02-mr-intro</artifactId>
             <version>1.0</version>
         </dependency>
@@ -27,7 +32,22 @@
         </dependency>
         <dependency>
             <groupId>org.manlier</groupId>
+            <artifactId>ch05-io</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
             <artifactId>ch06-mr-dev</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
+            <artifactId>ch08-mr-types</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.manlier</groupId>
+            <artifactId>ch09-mr-features</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>
@@ -49,20 +69,6 @@
                             </descriptors>
                             <finalName>hadoop-examples</finalName>
                             <outputDirectory>${project.build.directory}/../..</outputDirectory>
-                            <appendAssemblyId>false</appendAssemblyId>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>oozie-workfow-application</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <descriptors>
-                                <descriptor>../book/src/main/resources/oozie-workfow-application.xml</descriptor>
-                            </descriptors>
-                            <finalName>.</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>

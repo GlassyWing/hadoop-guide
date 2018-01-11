@@ -18,6 +18,9 @@
         <module>hadoop-example</module>
         <module>ch08-mr-types</module>
         <module>common</module>
+        <module>ch09-mr-features</module>
+        <module>ch05-io</module>
+        <module>ch12-avro</module>
     </modules>
 
 
