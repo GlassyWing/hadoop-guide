@@ -17,7 +17,7 @@ public class MaxTemperatureReducer
                        Context context)
             throws IOException, InterruptedException {
 
-        Optional<IntWritable> maxValue = StreamSupport.stream(values.spliterator(), false)
+        Optional<IntWritable> maxValue = StreamSupport.stream(values.spliterator(), true)
                 .map(IntWritable::get)
                 .max(Integer::compareTo)
                 .map(IntWritable::new);

@@ -11,7 +11,6 @@
     <modules>
         <module>book</module>
         <module>hadoop-meta</module>
-        <module>ch20-hbase</module>
         <module>ch02-mrintro</module>
         <module>ch03-hdfs</module>
         <module>ch06-mr-dev</module>
@@ -21,6 +20,9 @@
         <module>ch09-mr-features</module>
         <module>ch05-io</module>
         <module>ch12-avro</module>
+        <module>ch13-parquet</module>
+        <module>ch20-hbase</module>
+        <module>ch21-zk</module>
     </modules>
 
 

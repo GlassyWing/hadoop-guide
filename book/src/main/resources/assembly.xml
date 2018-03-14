@@ -13,9 +13,11 @@
             <useProjectArtifact>true</useProjectArtifact>
             <unpack>true</unpack>
             <scope>runtime</scope>
-            <useTransitiveDependencies>false</useTransitiveDependencies>
+            <useTransitiveDependencies>true</useTransitiveDependencies>
             <includes>
                 <include>org.manlier:*</include>
+                <include>org.jsoup:jsoup</include>
+                <include>com.fasterxml.jackson.core:*</include>
             </includes>
         </dependencySet>
     </dependencySets>
