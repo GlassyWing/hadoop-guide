@@ -14,12 +14,12 @@ import java.util.List;
 public class HBaseDictResourceImporter extends Configured implements Tool {
 	static final byte[] INFO_COLUMNFAMILY = Bytes.toBytes("info");
 	static final byte[] WEIGHT_QUALIFIER = Bytes.toBytes("weight");
-	static final byte[] TAG_QUALIFIER = Bytes.toBytes("wordclass");
+	static final byte[] TAG_QUALIFIER = Bytes.toBytes("tag");
 
 	@Override
 	public int run(String[] args) throws Exception {
 		if (args.length != 1) {
-			System.err.println("Usage: HBaseDictResourceImporter <config> <input>");
+			System.err.println("Usage: HBaseDictResourceImporter <input>");
 			return -1;
 		}
 
