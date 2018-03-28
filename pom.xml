@@ -23,6 +23,7 @@
         <module>ch13-parquet</module>
         <module>ch20-hbase</module>
         <module>ch21-zk</module>
+        <module>ch19-spark</module>
     </modules>
 
 
